@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --teksti: #333333;
+    --bg-dark: #181616;
+    --vaalea: #c2b0b0;
+    --teksti-vaalea: #f1d8d8;
+    --hightlight: #913d3d;
+    --tausta: #eeeeee;
+    --laatikko: #5f5e5e;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+/* main lohkon tyylit - täällä tekstin ulkonäkö */
+main {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    max-width: 1400px;
+    width: 70%;
+    margin: 20px auto;
+}
+/* Style the side navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-dark);
+    overflow-x: hidden;
+}
+  /* Side navigation links */
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+  /* Change color on hover */
+.sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* taulukko 3 */
+#kriteerit {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+#kriteerit td, #kriteerit th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#kriteerit th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--laatikko);
+    color: white;
+}
+/* lista tekstin muokkaus */
+.lista {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    max-width: 1400px;
+    width: 70%;
+    margin: 20px auto;
+}
+.lista h1 {
+    font-size: 1.9em;
+}
+.lista h2 {
+    font-size: 1.3em;
+}
+.lista h3 {
+    font-size: 1.3em;
+}
+.lista h4 {
+    font-size: 1.3em;
+}
+.lista h5 {
+    font-size: 1.3em;
+}
+/* pieni teksti */
+.pieni {
+    font-size: 0.9em;
+}
