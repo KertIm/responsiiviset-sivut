@@ -19,42 +19,57 @@ body {
     background-color: var(--tausta);
     color: var(--teksti);
 }
-/* main lohkon tyylit - täällä tekstin ulkonäkö */
+/* main styles - tekstin ulkonäkö */
 main {
-    font-size: 1.4em;
-    line-height: 1.3em;
+    font-size: 1.3em;
+    line-height: 1.5em;
     max-width: 1400px;
     width: 70%;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 /* Style the side navigation */
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 190px;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: var(--bg-dark);
     overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
 }
   /* Side navigation links */
 .sidenav a {
-    color: white;
-    padding: 16px;
+    color: var(--teksti-vaalea);
+    padding: 18px;
     text-decoration: none;
     display: block;
+    font-size: 1.2em;
 }
   /* Change color on hover */
 .sidenav a:hover {
-    background-color: #ddd;
+    background-color: rgb(182, 153, 196);
     color: black;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 20px;
+    margin-left: 70px;
+    padding-top: 27px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 1.1em;}
 }
 /* taulukko 3 */
 #kriteerit {
     font-family: 'Lato', sans-serif;
     border-collapse: collapse;
     width: 80%;
+    margin: 0px auto;
 }
 #kriteerit td, #kriteerit th {
     border: 1px solid #ddd;
@@ -66,6 +81,9 @@ main {
     text-align: left;
     background-color: var(--laatikko);
     color: white;
+}
+#taulukonOtsikko {
+    text-align: center;
 }
 /* lista tekstin muokkaus */
 .lista {
